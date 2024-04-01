@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.5em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+/* These Syles Apply To All Webpages. Start */
+#main_nav {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.3fr;
+    grid-template-rows: 50px;
+    box-shadow: 5px 5px 0px  #888;
+}
+
+#logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#logo a {
+    display: block;
+    text-decoration: none;
+    color: #0099ff;
+    margin-left: 50px;
+    font-size: xx-large;
+    font-weight: 1000;
+    font-style: italic;
+}
+
+.navigation1 { 
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-family:"cursive";
+    font-size: large;
+    font-style: oblique;
+    /* border: 2px solid red; */
+}
+
+.navigation1 a {
+    display: block;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: 0.5s ease;
+    color: black;
+    font-size: 500;
+}
+
+.navigation1 a:hover {
+    color: #0099ff;
+}
+
+.navigation2 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.navigation2 input {
+    display: block;
+    width: 200px;
+    height: 20px;
+    border: none;
+    background-color: white;
+    color: black;
+    outline: none;
+    caret-color: #0099ff;
+    margin-right: 10px;
+}
+
+.navigation2 input::placeholder {
+    padding: 0px 0px;
+    color: black;
+    font-style: italic;
+}
+
+.navigation2 span {
+    display: none;
+}
+
+.small_screen_nav {
+    display: none;
+}
+/* These Syles Apply To All Webpages. End */
+
+/* Main Content Styling Start */
+main {
+    margin-bottom: 20px;
+}
+
+div.intro {
+    position: relative;
+    top: 20px;
+    height: 100px;
+}
+
+.intro :nth-child(1) {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 1000;
+    font-style: italic;
+    color: #0099ff;
+}
+
+.intro :nth-child(2) {
+    padding-top: 10px;
+    text-align: center;
+    font-size: xx-large;
+    font-size: larger;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.form_container {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 700px;
+    height: 500px;
+    background-color: #052438;
+    margin-top: 20px;
+    position: relative;
+}
+
+form input {
+    width: 550px;
+    height: 60px;
+    display: block;
+    margin: auto;
+    background-color: #0099ff;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: medium;
+    outline: none;
+    border-radius: 30px;
+    caret-color: white;
+}
+
+form .eye_box {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 335px;
+    left: 560px;
+}
+
+form .fa-eye {
+    color: white;
+    display: none;
+}
+
+.fa-eye:hover {
+    cursor: pointer;
+}
+
+#submit {
+    color: black;
+    font-size: larger;
+    transition: 0.7s ease;
+}
+
+input, #submit:hover {
+    background-color: black;
+    color: #0099ff;
+}
+
+input::placeholder {
+    font-size: small;
+    color: white;
+    padding-left: 5px;
+}
+
+div.login {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login :nth-child(2) {
+    color: #0099ff;
+    text-decoration: none;
+}
+/* Main Content Styling End */
+
+/* These Styles Apply To All Webpages.Start */
+footer {
+    background-color: black;
+}
+
+.foot1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.foot1 div {
+  margin-top: 20px;
+  font-size: xx-large;
+  font-weight: 1000;
+  font-style: italic;
+  color: #0099ff;
+}
+
+.foot2 {
+  display: flex;
+  justify-content: center;
+  color: #004a7c;
+}
+
+.foot2 div {
+    text-align: center;
+}
+
+.foot2 div :nth-child(1) {
+    margin-top: 10px;
+}
+
+.foot2 div :nth-child(2) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.foot2 div :nth-child(3) {
+    margin-bottom: 20px;
+}
+
+.foot2 div span {
+    padding-left: 20px;
+    transition: 0.5s ease;
+}
+
+.foot2 div span:hover {
+    color: #0099ff;
+}
+/* These Styles Apply To All Webpages. End */
+
+@media (max-width: 780px) { 
+    #main_nav {
+        display: grid;
+        grid-template-columns: 1fr 0.2fr;
+
+    }
+
+    .navigation1 {
+        display: none;
+    }
+
+    .navigation2 span{
+        display: block;
+        transition: 0.8s ease;
+    }
+
+    .navigation2 span:hover {
+        color: #0099ff;
+    }
+
+    .small_screen_nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color:#052438;
+    }
+
+    .small_screen_nav a {
+        margin: 20px 0px;
+        text-decoration: none;
+        font-family:"cursive";
+        font-size: large;
+        font-style: oblique;
+        color: white;
+        transition: 0.5s ease;
+    }
+
+    .small_screen_nav a:hover {
+        color: #0099ff
+    }
+}
+
+/* MADE BY NDUAGOZIEM */

@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.5em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+/* These Syles Apply To All Webpages. Start */
+#main_nav {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.3fr;
+    grid-template-rows: 50px;
+    box-shadow: 5px 5px 0px  #888;
+    margin-bottom: 5px;
+}
+
+#logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#logo a {
+    display: block;
+    text-decoration: none;
+    color: #0099ff;
+    margin-left: 50px;
+    font-size: xx-large;
+    font-weight: 1000;
+    font-style: italic;
+}
+
+.navigation1 { 
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-family:"cursive";
+    font-size: large;
+    font-style: oblique;
+}
+
+.navigation1 a {
+    display: block;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: 0.5s ease;
+    color: black;
+    font-size: 500;
+}
+
+.navigation1 a:hover {
+    color: #0099ff;
+}
+
+.navigation2 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.navigation2 input {
+    display: block;
+    width: 200px;
+    height: 20px;
+    border: none;
+    outline: none;
+    caret-color: #0099ff;
+    margin-right: 10px;
+}
+
+.navigation2 input::placeholder {
+    font-style: italic;
+    color: black;
+}
+
+.navigation2 span {
+    display: none;
+}
+
+.small_screen_nav {
+    display: none;
+}
+
+/* These Syles Apply To All Webpages. End */
+
+swiper-container {
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+swiper-slide {
+    width: auto;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+swiper-slide img {
+    height: 400px;
+    width: 400px;
+}
+
+article {
+    margin-top: 10px;
+}
+
+.article-header {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.article-header h1 {
+ font-size: large;
+}
+
+.article-intro {
+ display: flex;
+ justify-content: center;
+}
+
+.article-intro div {
+ display: flex;
+ justify-content: center;
+ width: 700px;
+}
+
+.article-intro, div p {
+ text-align: center;
+}
+
+.our_catalogue {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.our_catalogue h2 {
+ font-size: large;
+}
+
+.trending {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.trending h3 {
+    margin-left: 100px;
+}
+
+.trending_img_container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+.trending_img_container img {
+    width: 300px;
+    height: 300px;
+    transition: 0.8s linear;
+}
+
+.casual {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.casual h3 {
+    margin-left: 80px;
+}
+
+.casual_img_container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+.casual_img_container img {
+    width: 300px;
+    height: 300px;
+}
+
+.see_more_btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.see_more_btn a {
+    color: black;
+    text-decoration: none;
+    transition: 0.5s ease;
+    margin-bottom: 20px;
+}
+
+.see_more_btn a:hover {
+    width: 100px;
+    background-color: #0099ff;
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* These Styles Apply To All Webpages.Start */
+footer {
+    background-color: black;
+}
+
+.foot1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.foot1 div {
+  margin-top: 20px;
+  font-size: xx-large;
+  font-weight: 1000;
+  font-style: italic;
+  color: #0099ff;
+}
+
+.foot2 {
+  display: flex;
+  justify-content: center;
+  color: #004a7c;
+}
+
+.foot2 div {
+    text-align: center;
+}
+
+.foot2 div :nth-child(1) {
+    margin-top: 10px;
+}
+
+.foot2 div :nth-child(2) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.foot2 div :nth-child(3) {
+    margin-bottom: 20px;
+}
+
+.foot2 div span {
+    padding-left: 20px;
+    transition: 0.5s ease;
+}
+
+.foot2 div span:hover {
+    color: #0099ff;
+}
+/* These Styles Apply To All Webpages. End */
+
+/* Nav Bar Media Query Section. Start */
+@media (max-width: 780px) { 
+    #main_nav {
+        display: grid;
+        grid-template-columns: 1fr 0.2fr;
+
+    }
+
+    .navigation1 {
+        display: none;
+    }
+
+    .navigation2 span{
+        display: block;
+        transition: 0.8s ease;
+    }
+
+    .navigation2 span:hover {
+        color: #0099ff;
+    }
+
+    .small_screen_nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color:#052438;
+    }
+
+    .small_screen_nav a {
+        margin: 20px 0px;
+        text-decoration: none;
+        font-family:"cursive";
+        font-size: large;
+        font-style: oblique;
+        color: white;
+        transition: 0.5s ease;
+    }
+
+    .small_screen_nav a:hover {
+        color: #0099ff
+    }
+}
+
+/* MADE BY NDUAGOZIEM */
